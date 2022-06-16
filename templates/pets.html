@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Pets</title>{% endblock %}
+
+{% block content %}
+<h1>Say hi to all our pets</h1>
+{% for pet in pets %}
+<div>
+    <h2>{{ pet.name }}</h2>
+    <img src="{{pet.photo_url.url}}" style="width:100px;height:110px;">
+    <button>View Details</button>
+    
+</div>
+{% endfor %}
+{% endblock %}
+
