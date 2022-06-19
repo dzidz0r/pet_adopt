@@ -10,7 +10,9 @@ class Pet(models.Model):
     photo_url = models.ImageField(upload_to='images')
     breed = models.ManyToManyField(
         'Breed', help_text='Select the breed of the pet')
-    age = models.IntegerField()
+    born = models.DateField(null=True, help_text='Enter the date of birth')
+    gender = models.ManyToManyField('Gender')
+    favorite_snack = models.TextField(null=True)
     description = models.TextField()
     price = models.IntegerField()
 
@@ -24,3 +26,10 @@ class Breed(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Gender(models.Model):
+    gender = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.gender
