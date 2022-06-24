@@ -19,4 +19,7 @@ def contact(request):
 
 
 def form(request):
+    if request.method == 'POST':
+        return render(request, 'redirect.html')
+
     return render(request, 'form.html')

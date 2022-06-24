@@ -4,7 +4,29 @@
 
 
 {% block content %}
+
 <h1>Welcome to PetCo</h1>
 <a href="/pets"><button>Click here to see all the available pets</button></a>
+
+
+{% for message in messages %}
+
+{% if user.is_authenticated %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Message: </strong> Hey there! You are successfully logged in
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<h3></h3>
+<button type="submit"><a href="signout">Log Out</a></button>
+
+{% else %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Message: </strong> {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 <a href="/accounts/"><button>Click here to create an account</button></a>
+{% endif %}
+{% endfor %}
+
+
 {% endblock %}
