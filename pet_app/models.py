@@ -8,10 +8,9 @@ class Pet(models.Model):
     name = models.CharField(
         max_length=100, help_text='Enter the name of the pet')
     photo_url = models.ImageField(upload_to='images')
-    breed = models.ManyToManyField(
-        'Breed', help_text='Select the breed of the pet')
+    breed = models.ForeignKey('Breed', on_delete=models.SET_NULL, null=True)
     born = models.DateField(null=True, help_text='Enter the date of birth')
-    gender = models.ManyToManyField('Gender')
+    gender = models.ForeignKey('Gender', on_delete=models.SET_NULL, null=True)
     favorite_snack = models.TextField(null=True)
     description = models.TextField()
     price = models.IntegerField()
