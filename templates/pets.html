@@ -1,16 +1,174 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}<title>Pets</title>{% endblock %}
 
 {% block content %}
-<h1>Say hi to all our pets</h1>
-{% for pet in pets %}
-<div>
-    <h2>{{ pet.name }}</h2>
-    <img src="{{pet.photo_url.url}}" style="width:100px;height:110px;">
-    <button>View Details</button>
-    
-</div>
-{% endfor %}
+<!-- <h1>Say hi to all our pets</h1>
+} -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Pets</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                 
+                {% for pet in pets %}
+               
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{{pet.photo_url.url}}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#mymodal"><i class="fa fa-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6>{{ pet.name }}</h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!----- MODAL POPUP  ------>
+                
+                <div class="modal" id="mymodal">
+                    <div class="modal-dialog-centered">
+                        {% for pet in pets %}
+                        <div class="modal-content">                           
+                            <div class="modal-header text-center">
+                                <h2 class="modal-title w-100">Pet</h2>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Name: {{ pet.name }}</h6>
+                                <p>Breed: {{pet.breed}}</p>
+                                <p>Gender: {{pet.gender}}</p>
+                            </div>                         
+                        </div><!-----end .modal-content---->
+                        {% endfor %}
+                    </div><!---end .modal-dialog---->
+                </div><!-- end. modal---->
+                
+               
+                <!-------- END MODAL ------>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}
 
