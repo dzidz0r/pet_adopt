@@ -1,0 +1,82 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.header{
+    background: linear-gradient(to right, rgb(0, 170, 255), rgb(4, 59, 79))!important;
+    height:62vh;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 100px;
+}
+.font{
+    color: white;
+    padding: 0 9px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:normal;
+    letter-spacing: 2px;
+    font-weight:400;
+}
+div.box{
+    padding-top: 21px;
+}
+div.contact{
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    
+}
+div > h1{
+    font-size: 3.5rem;
+   font-weight: 500;
+ 
+}
+.home{
+    padding-top: 10px;
+}
+.about{
+    height: 500px;
+    margin-bottom: 100px;
+    
+}
+
+.reachus{
+   background-color: rgb(9, 102, 136);
+   height: 80vh;
+   color: white;
+
+}
+.format{
+    margin-left: 40px;
+    margin-top: 150px;
+}
+.form{
+    padding-top:  150px;
+    
+}
+#input{
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.message{
+   
+    border-radius: 12px;
+}
+footer{
+    background: rgba(0, 0, 0, 0.763);
+}
+.icon{
+   
+    font-size: 30px;
+}
+.locate:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px  40px -12px rgba(0,0,0,0.75);
+    cursor: pointer;
+
+}
+

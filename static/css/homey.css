@@ -1,0 +1,354 @@
+.back{
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.400)), url("/static/image/puppy-5388151_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2;
+  font-family: 'Poppins', sans-serif !important;
+  min-height: 100vh;
+}
+.circle-text{
+  position: relative;
+  transform: rotate(-50deg);
+  margin: -70px auto 0 590px;
+  z-index: 9999;
+  padding: 14px 100px;
+  float: left;
+}
+
+h1{
+  color: black;
+  padding-left: 30px;
+  font-family: 'Indie Flower', cursive !important;
+}
+
+h1 span{
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left : 0;
+  top: 0;
+  transform-origin: bottom center;
+  font-size: 60px;
+  animation-timing-function: linear;
+  animation-duration: 0.7s;
+  animation-iteration-count: 0.5;
+  display: inline-block;
+}
+.bounce{
+  animation-name: bounce;
+}
+
+
+.char1{
+  transform: rotate(-20deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 0.5;
+  display: inline-block;
+}
+.char1:hover{
+  color:#5bc0de;
+
+}
+.char2{
+  transform: rotate(-5deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 0.5;
+  display: inline-block;
+}
+.char2:hover{
+  color:#5bc0de;
+
+}
+.char3{
+  transform: rotate(3deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char3:hover{
+  color:#5bc0de;
+
+}
+.char4{
+  transform: rotate(8deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char4:hover{
+  color:#5bc0de;
+
+}
+.char5{
+  transform: rotate(17deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char5:hover{
+  color:#5bc0de;
+
+}
+.char6{
+  transform: rotate(27deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char6:hover{
+  color:#5bc0de;
+
+}
+.char7{
+  transform: rotate(43deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char7:hover{
+  color:#5bc0de;
+
+}
+.char8{
+  transform: rotate(56deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char8:hover{
+  color:#5bc0de;
+
+}
+.char9{
+  transform: rotate(61deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char9:hover{
+  color:#01607c;
+
+}
+.char10{
+  transform: rotate(66deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char10:hover{
+  color: #01607c;
+
+}
+.char11{
+  transform: rotate(75deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char11:hover{
+  color: #01607c;
+
+}
+.char12{
+  transform: rotate(81deg);
+  animation-timing-function: linear;
+  animation-duration:0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char12:hover{
+  color: #ffffff;
+
+}
+.char13{
+  transform: rotate(93deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char13:hover{
+  color:#ffffff;
+
+}
+.char14{
+  transform: rotate(101deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char14:hover{
+  color:#ffffff;
+
+}
+.char15{
+  transform: rotate(107deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char15:hover{
+  color:#ffffff;
+
+}
+.char16{
+  transform: rotate(117deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char16:hover{
+  color:#ffffff;
+
+}
+.char17{
+  transform: rotate(90deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char17:hover{
+  color:#ffffff;
+
+}
+.char18{
+  transform: rotate(95deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char18:hover{
+  color:#ffffff;
+
+}
+.char19{
+  transform: rotate(100deg);
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char19:hover{
+  color:#fafafa;
+
+}
+.char20{
+  transform: rotate(105deg);
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+.char20:hover{
+  color: #ffffff;
+
+}
+
+a.font{
+  position: relative !important;
+  color: #01607c;
+}
+.font{
+  padding: 0 9px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight:900;
+}
+.font:after{
+  content: "";
+  position: absolute;
+  background-color:#5bc0de;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.5s ease;
+
+}
+.font:hover:after{
+  width: 100%;
+}
+.font:hover{
+  color: #ffffff;
+}
+
+h2{
+  padding-top: 220px;
+  padding-left: 30px;
+  font-weight: 1000;
+}
+.des{
+  padding-left: 30px;
+  color: white;
+  
+  
+}
+.get{
+  
+  font-size: 20px;
+ 
+
+}
+button{
+  background-color: #05475b;
+  border-radius: 6px;
+  color: white;
+  
+  width: 180px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, transform;
+  
+}
+button.hover, button:focus{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+button:active{
+  box-shadow:none;
+  top: 8px;
+
+}
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+      transform: scale(1, 1);
+  }
+  40% {
+      transform: scale(1.75, 0.65);
+  }
+  45% {
+      transform: scale(1.75, 0.65);
+  }
+  70% {
+      transform: scale(1.25, 0.75);
+  }
+  90% {
+      transform: scale(1.15, 0.85);
+  }
+}
